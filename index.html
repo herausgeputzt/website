@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Brunner - Lektorin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
+    <style>
+        html, body {
+            min-height: 100%;
+            background-color: rgb(227, 216, 199);
+        }
+        .image-fade-container {
+            position: relative;
+            display: inline-block; /* Ensures container wraps the image */
+            line-height: 0; /* Removes extra space below image */
+            max-width: 100%; /* Prevent image overflow */
+            background-color: rgb(88, 47, 31);
+            padding-top: 3ex;
+            min-height: 100%;
+        }
+
+        .image-fade-container img {
+            display: block; /* Removes extra space below image */
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Add some spacing */
+        .uk-container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        h1.name {
+            font-size: 2.5em;
+            margin-top: 1ex;
+            margin-bottom: 0.2ex;
+            color: #000;
+        }
+        h2.beruf {
+            font-size: 1.8em;
+            margin-top: 0;
+            color: #000;
+        }
+        h3 {
+            margin-bottom: 1ex;
+            color: #000;
+        }
+        p {
+            color:#000
+        }
+        b {
+            color: black;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="uk-container">
+
+        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+
+            <!-- Left Column -->
+            <div class="uk-width-1-3">
+                <div class="image-fade-container">
+                    <img src="silvia.jpg" alt="Foto von Silvia Brunner">
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="uk-width-2-3 right-column">
+                <div class="left-column-text">
+                    <h1 class="name">Silvia Brunner</h1>
+                    <h2 class="beruf">Lektorat</h2>
+                </div>
+                <div>
+                    <p>Herausgeputzt – so sollen sie daherkommen, die Texte.</p>
+                    <p>Während elf Jahren arbeitete ich als Fachlektorin bei der Schweizerischen Zeitschrift für Heilpädagogik. Aktuell bin ich wieder selber mitten drin in der Pädagogik: als Familienfrau und Schulische Heilpädagogin.</p>
+
+                    <p>Das Lektorat lässt mich jedoch nicht los. Seit einigen Jahren engagiere ich mich bei Olten jetzt! und im Schulbetrieb als Lektorin.</p>
+
+                    <p>Anfragen für Einzelaufträge nehme ich gerne entgegen.</p>
+                </div>
+
+                <div>
+                    <h3>Mein Angebot</h3>
+                    <p><b>Lektorat Lite – 10 Franken pro 1000 Zeichen</b></p>
+                    <p>Das Lektorat Lite besteht aus einer Grammatik-Korrektur und einer Einschätzung der sprachlichen und inhaltlichen Qualität.</p>
+                    <p>Die Erfahrung zeigt, dass Texte in sehr unterschiedlichem Zustand zu mir kommen. In den meisten Fällen wirst du zusätzlich zum korrigierten Text ein Angebot für ein umfassendes Lektorat erhalten.</p>
+                </div>
+
+                <div>
+                    <h3>Kontakt</h3>
+                    <p><a href="mailto:lektorat@herausgeputzt.ch">lektorat@herausgeputzt.ch</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
