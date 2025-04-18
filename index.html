@@ -7,32 +7,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
     <style>
         html, body {
-            min-height: 100%;
             background-color: rgb(195, 236, 235);
+            margin: 0;
+            padding: 0;
         }
         html, body, .uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,.uk-heading-2xlarge,.uk-heading-3xlarge,.uk-heading-large,.uk-heading-medium,.uk-heading-small,.uk-heading-xlarge,h1,h2,h3,h4,h5,h6 {
             color: rgb(34, 83, 87);
         }
-        .image-fade-container {
-            position: relative;
-            display: inline-block; /* Ensures container wraps the image */
-            line-height: 0; /* Removes extra space below image */
-            max-width: 100%; /* Prevent image overflow */
-            background-color: rgb(108, 154, 147);
-            padding-top: 3ex;
-            min-height: 100%;
+        .text-column {
+            padding-bottom: 4ex;
         }
+        @media (min-width: 640px) {
+            .image-column {
+                min-height: 100vh;
+            }
 
-        .image-fade-container img {
-            display: block; /* Removes extra space below image */
-            max-width: 100%;
-            height: auto; /* Maintain aspect ratio */
+            .image-container {
+                background-color: rgb(108, 154, 147);
+                height: 100%;
+            }
+            .image-container img {
+                padding-top: 3ex;
+                width: 100%;
+            }
         }
-
+        @media (max-width: 639px){
+            .image-container {
+                width: 50vw;
+                float: right;
+                height: 38vw;
+                padding-top: 3ex;
+            }
+            .image-container img {
+                object-fit: cover;
+                object-position: 10% 40%;
+                overflow: hidden;
+                height: 50vw;
+                width: 50vw;
+                border-radius: 50%;
+            }
+            h1 {
+                border-bottom-width: 2px;
+                border-bottom-style: solid;
+                border-color:rgb(34, 83, 87);
+            }
+        }
         /* Add some spacing */
         .uk-container {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin-top: 0;
         }
 
         h1.name {
@@ -61,38 +83,29 @@
 
     <div class="uk-container">
 
-        <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+        <div uk-grid>
 
             <!-- Left Column -->
-            <div class="uk-width-1-3@s uk-width-1-1">
-                <div class="image-fade-container">
+            <div class="uk-width-1-3@s uk-width-1-1 image-column">
+                <div class="image-container">
                     <img src="silvia.jpg" alt="Foto von Silvia Brunner">
                 </div>
             </div>
 
             <!-- Right Column -->
-            <div class="uk-width-2-3@s uk-width-1-1 right-column">
-                <div class="left-column-text">
+            <div class="uk-width-2-3@s uk-width-1-1 text-column">
                     <h1 class="name">Silvia Brunner</h1>
                     <h2 class="beruf">Lektorat</h2>
-                </div>
-                <div>
                     <p>Herausgeputzt – so sollen sie daherkommen, die Texte. Ich mag es, wenn's stimmt – und helfe dir gerne dabei, deine Botschaft zum Glänzen zu bringen.</p>
                     <p>Während elf Jahren arbeitete ich als Fachlektorin bei der Schweizerischen Zeitschrift für Heilpädagogik. Aktuell bin ich wieder selber mitten drin in der Pädagogik: als Familienfrau und Schulische Heilpädagogin.</p>
 
                     <p>Das Lektorat jedoch lässt mich  nicht los. Seit einigen Jahren engagiere ich mich bei Olten jetzt! und im Schulbetrieb als Lektorin.</p>
 
                     <p>Anfragen für Einzelaufträge nehme ich gerne entgegen.</p>
-                </div>
-
-                <div>
                     <h3>Mein Angebot</h3>
                     <p><b>Lektorat light – 10 Franken pro 1000 Zeichen</b></p>
                     <p>Das Lektorat light besteht aus einer Grammatik-Korrektur und einer Rückmeldung zur sprachlichen und inhaltlichen Qualität.</p>
                     <p>Die Erfahrung zeigt, dass Texte in sehr unterschiedlichem Zustand eintreffen. In den meisten Fällen wirst du zusätzlich zum korrigierten Text ein Angebot für ein umfassendes Lektorat erhalten.</p>
-                </div>
-
-                <div>
                     <h3>Kontakt</h3>
                     <p><a href="mailto:lektorat@herausgeputzt.ch">lektorat@herausgeputzt.ch</a></p>
                 </div>
